@@ -1,0 +1,14 @@
+ul{ list-style: none; }
+/* LEVEL ONE */
+ul.dropdown { position: relative; }
+ul.dropdown li { float: left; zoom: 1; }
+ul.dropdown li a { display: block; padding: 4px 8px; border-right: 1px solid #333; color: #fff; }
+ul.dropdown li:last-child a { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,ul.dropdown li:hover  { position: relative; background:url(../images/menu-bg-hover.png) repeat-x 0 0;  }
+/* LEVEL TWO */
+ul.dropdown ul{ width:145px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li{ font-weight: normal; background:url(../images/menu-bg.png) repeat-x 0 0; color: #000; border-top:1px solid #646464; float: none; }     
+ul.dropdown ul li a{ border:none; width:145px; display:block; background-color:#3f3f3f; color:#fff; } /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul.en,ul.dropdown ul.en li a{ width:160px;}
+ul.dropdown li ul.sub_menu_prd, ul.dropdown li ul.sub_menu_prd li a{width:165px;left:-12px;}
+ul.dropdown li ul.sub_menu_prd_en, ul.dropdown li ul.sub_menu_prd_en li a{width:280px;left:-40px;}
